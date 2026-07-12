@@ -1,0 +1,164 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#3d0000,#8b0000,#ff1744);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+#login{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+padding:20px;
+}
+
+#login h1{
+font-family:'Great Vibes',cursive;
+font-size:55px;
+margin-bottom:15px;
+color:#fff;
+text-shadow:0 0 15px red;
+}
+
+#login h2{
+margin-bottom:20px;
+}
+
+input{
+padding:14px;
+width:280px;
+border:none;
+border-radius:30px;
+font-size:18px;
+text-align:center;
+}
+
+button{
+margin-top:20px;
+padding:14px 35px;
+border:none;
+border-radius:30px;
+background:#ff1744;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+background:#ff4569;
+}
+
+#website{
+display:none;
+animation:fadeIn 1.5s;
+}
+
+header{
+padding:60px 20px;
+}
+
+header h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:#fff;
+text-shadow:0 0 20px #ff1744;
+}
+
+header p{
+font-size:22px;
+margin-top:15px;
+}
+
+section{
+padding:50px 20px;
+}
+
+.hero{
+font-size:22px;
+line-height:1.8;
+}
+
+.gallery h2,
+.letter h2,
+.cake h2{
+margin-bottom:25px;
+font-size:36px;
+}
+
+.slider{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:15px;
+scroll-behavior:smooth;
+}
+
+.slider img{
+height:300px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,255,255,.4);
+transition:.4s;
+}
+
+.slider img:hover{
+transform:scale(1.05);
+}
+
+.letter{
+max-width:900px;
+margin:auto;
+line-height:2;
+font-size:20px;
+}
+
+.emoji{
+font-size:70px;
+animation:bounce 1.5s infinite;
+}
+
+footer{
+padding:50px;
+font-size:28px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:48px;
+}
+
+.slider img{
+height:220px;
+}
+
+.hero,
+.letter{
+font-size:18px;
+}
+
+#login h1{
+font-size:42px;
+}
+
+}
